@@ -7,3 +7,4 @@ menuitems.ItemName, menuitems.ItemCategory
 from customers inner join orders inner join menu inner join menuitems
 on customers.customerid = orders.customerid and orders.menuid = menu.MenuID and menu.MenuItemsID = menuitems.MenuItemsID
 where orders.TotalCost > 150 order by totalcost asc;
+select * from CustomerDetails;
