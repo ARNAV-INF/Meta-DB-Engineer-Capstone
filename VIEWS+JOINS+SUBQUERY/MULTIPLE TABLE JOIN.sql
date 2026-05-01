@@ -1,4 +1,5 @@
 use little_lemon_db;
+CREATE VIEW "CustomerDetails" AS
 select Customers.CustomerID, concat(Customers.FirstName,' ',Customers.LastName) as "FullName",
 orders.OrderID, orders.TotalCost,
 Menu.Category as "MenuName",
